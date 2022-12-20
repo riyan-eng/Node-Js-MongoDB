@@ -5,7 +5,7 @@ MongoClient.connect(
     url,
     function(err, db){
         if (err) throw err
-        dbo = db.db('nodejs')
+        var dbo = db.db('nodejs')
         dbo.collection('customers').findOne({}, function(err, res){
             if (err) throw err
             console.log(res.name)
