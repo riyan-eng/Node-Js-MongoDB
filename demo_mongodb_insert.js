@@ -5,8 +5,8 @@ MongoClient.connect(url, function (err, db) {
   if (err) throw err;
   var dbo = db.db("nodejs");
   var myobj = {
-    name: "Praxis inc",
-    address: "Railway 37",
+    name: "Okto inc",
+    address: "Highway 37",
   };
   dbo.collection("customers").insertOne(myobj, function (err, res) {
     if (err) throw err;
